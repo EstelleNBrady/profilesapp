@@ -1,16 +1,49 @@
-# React + Vite
+# Serverless Web Application: "Power of 10" Architecture
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project demonstrates a serverless web application built using the **"Power of 10"** architecture. The application showcases modern AWS services and their integration to deliver a scalable, secure, and fully functional solution.  
 
-Currently, two official plugins are available:
+Key highlights of this project:  
+- **Frontend:** Hosted on **AWS Amplify**  
+- **Backend Logic:** Implemented using **AWS Lambda**  
+- **Database:** Managed via **Amazon DynamoDB** (NoSQL)  
+- **API Management:** **Amazon API Gateway**  
+- **Security:** Configured with **IAM policies**  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project provided hands-on experience in the **Developer domain** of AWS certification, focusing on:  
+- Integrating **AWS services** for end-to-end functionality  
+- Creating and deploying **RESTful APIs**  
+- Handling **CORS** configurations  
 
-## React Compiler
+## Architecture
+[Frontend: AWS Amplify] <--> [API Gateway] <--> [AWS Lambda] <--> [DynamoDB]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+- **Frontend:** React-based UI hosted on Amplify for serverless deployment  
+- **Backend:** Lambda functions handle application logic  
+- **Database:** DynamoDB stores and retrieves application data  
+- **API Gateway:** Serves as the RESTful API interface  
+- **Security:** IAM roles ensure secure access between services  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+- Fully serverless architecture  
+- **RESTful API** communication  
+- Scalable **NoSQL database**  
+- Secure integration via **IAM policies**  
+- Hands-on implementation of **CORS handling**  
+
+## Skills Demonstrated
+- **AWS Amplify** deployment and hosting  
+- **Lambda** function development  
+- **DynamoDB** data modeling and queries  
+- **API Gateway** setup and RESTful API design  
+- **IAM roles** and policy management  
+- Understanding of **serverless architecture patterns**  
+
+## Getting Started
+To deploy this project locally or on your own AWS account:  
+1. Clone the repository:
+2. Set up your AWS credentials.
+3. Deploy the frontend using AWS Amplify.
+4. Deploy backend Lambda functions and API Gateway endpoints.
+5. Configure DynamoDB tables and IAM policies as needed.
